@@ -25,7 +25,7 @@ SECRET_KEY = 'django-insecure-$00_@2vv(v-g66&+c70hw9_9-l3@l4)c-kuvcopzcd(aotq3t(
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = []
+ALLOWED_HOSTS = ["*"]
 
 
 # Application definition
@@ -37,9 +37,10 @@ INSTALLED_APPS = [
     'django.contrib.sessions',
     'django.contrib.messages',
     'django.contrib.staticfiles',
+
     'rest_framework',
-     'api.apps.ApiConfig',
-     'soilclassification',
+
+    'classify_soil'
 ]
 
 MIDDLEWARE = [
